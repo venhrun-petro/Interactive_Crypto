@@ -50,8 +50,9 @@ width: 180px;
 
 .search::-moz-placeholder {  /* Firefox 19+ */
     color: white !important;
+    font-weight: 400;
 }
-font-weight: 400;
+
 
 .search:-ms-input-placeholder {
     color: white !important;
@@ -84,7 +85,7 @@ position: absolute;
     outline: none;
 
 }
-select > option {
+.select select > option {
     background-color: #2B2B2B;
     border: 0;
     outline: none;
@@ -319,7 +320,7 @@ select > option {
     margin: 0 10px;
 }
 .brokers_content_btn{
-    width: 120px;
+    padding: 0 15px;
     line-height: 40px;
     text-align: center;
     float: left;
@@ -423,10 +424,12 @@ select > option {
    font-weight: 900;
     font-size: 20px;
     margin: 0;
+    float: left;
     padding-left: 20px;
 }
 .registration-form{
     width: 100%;
+    z-index: 99999999;
 }
 .btn-sigh-in{
     float: left;
@@ -453,7 +456,22 @@ select > option {
 .registration_text{
     text-align: center;
     width: 100%;
+    position: relative;
 }
+p.registration_text:after, p.registration_text:before {
+    position: absolute;
+    content: "";
+    width: 45%;
+    height: 2px;
+    background: #2B2B2B;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;}
+p.registration_text:before{
+    right: 0;
+    left: auto;
+}
+
 .my-input{
     width: 100%;
     line-height: 40px;
@@ -461,4 +479,172 @@ select > option {
     margin: 5px 0;
     font-size: 18px;
     padding: 0 10px;
+    border: 1px solid #2B2B2B;
+}
+.my-input:active, .my-input:focus{
+    outline: none;
+    border: 1px solid black;
+}
+.select-coutry{
+ height: 40px;
+}
+.select-american{
+    width: 30%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 3px;
+    float: left;
+    border: 1px solid #2B2B2B;
+}
+.input-number{
+    margin-left: 5%;
+    width: 65%;
+}
+.sign-in-btn{
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    color:  #2B2B2B;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
+}
+.registration-label{
+    width: 50%;
+    font-size: 12px;
+
+    padding-left: 10px;
+    float: left;
+    cursor: pointer;
+}
+.registration-label input, .registration-label input{
+    width: 14px;
+    height: 14px;
+    background-color: white!important;
+    margin-right: 10px;
+}
+.soz{
+    width: calc(25% - 2px);
+    /* height: 70px; */
+    /*background-color: black;*/
+    float: left;
+    margin-right: 2px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    font-size: 35px;
+}
+.soz:nth-child(4){
+    width: 25%;
+    margin: 0;
+}
+.insta-color{
+    background-color: #e91968;
+}
+.my-banner{
+    width: 100%;
+    margin-top: 25px;
+    object-fit: cover;
+}
+.btc_search{
+    float: right;
+    width: 40%;
+    margin: 10px 20px 10px 0;
+    color: #2B2B2B ;
+    border-bottom-color: #2B2B2B;
+    z-index: 222;
+}
+.watchlist .registration-title{
+    border: none;
+    width: auto;
+}
+.watchlist .search_icon{
+    color: #2B2B2B ;
+    right: 25px;
+    top: 10px;
+    font-weight: 400;
+}
+
+.watchlist .search::-webkit-input-placeholder {
+    color: #2B2B2B  !important;
+    font-weight: 400;
+}
+
+.watchlist .search:-moz-placeholder { /* Firefox 18- */
+    color: #2B2B2B  !important;
+    font-weight: 400;
+}
+
+.watchlist .search::-moz-placeholder {  /* Firefox 19+ */
+    color: #2B2B2B !important;
+    font-weight: 400;
+}
+
+
+.watchlist .search:-ms-input-placeholder {
+    color: #2B2B2B !important;
+    font-weight: 400;
+}
+.market-cap{
+    width: 100%;
+    display: table;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.col-txt{
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+}
+.col-txt strong{
+    font-weight: 800;
+}
+
+.watchlist{
+    border-bottom: 1px solid #2B2B2B;
+    display: table;
+}
+.content_col-txt{
+    width: 100%;
+}
+.border-bottom{
+    display: table;
+    border-bottom: 1px solid #F6F6F6;
+    padding: 5px 0;
+}
+.col-txt .certificate{
+    margin-right: 5px;
+}
+.col-txt .btc_bottom_icon{
+    font-size: 12px!important;
+}
+
+
+.col-txt_text-color{
+    color: #EF4364;
+}
+.btn-trade{
+    background-color: #05bd9b;
+    color: white;
+    border-radius: 3px;
+    width: 100%;
+    /* height: 100%; */
+    /* line-height: 21px; */
+    padding: 3px 5px;
+    /* margin: -5px 0; */
+}
+.chart-line{
+    color: #2B2B2B;
+    font-size: 16px;
+}
+.active-false{
+    background-color: #EF4364;
+}
+.active-true{
+    background-color: #05bd9b;
+
 }
