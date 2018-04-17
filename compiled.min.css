@@ -1,0 +1,464 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-color: #2B2B2B;
+}
+.my-col{
+    /*background-color: white;*/
+    /*height: 20px;*/
+}
+.top-logo{
+width: 180px;
+    margin: 10px 0;
+}
+.search{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    display: block;
+    position: relative;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 15px auto 0 auto;
+}
+.inp-relative{
+    width: 400px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    /*top: 15px;*/
+}
+.search:focus{
+    outline: none;
+}
+
+.search::-webkit-input-placeholder {
+    color: white !important;
+    font-weight: 400;
+}
+
+.search:-moz-placeholder { /* Firefox 18- */
+    color: white !important;
+    font-weight: 400;
+}
+
+.search::-moz-placeholder {  /* Firefox 19+ */
+    color: white !important;
+}
+font-weight: 400;
+
+.search:-ms-input-placeholder {
+    color: white !important;
+    font-weight: 400;
+}
+.search_icon{
+position: absolute;
+    top: 4px;
+    right: 10px;
+    color: white;
+   font-size: 14px;
+}
+.cont-right{
+    float: right;
+    position: relative;
+}
+.select {
+    content: '>';
+    background-position: 95% 50%;
+    border-radius: 5px;
+    margin: 22px 0 22px 15px;
+    width: 100px;
+    position: relative;
+    padding: 0 5px;
+    float: left;
+}
+.select >select:active,
+.select> select:focus {
+    background: transparent;
+    outline: none;
+
+}
+select > option {
+    background-color: #2B2B2B;
+    border: 0;
+    outline: none;
+    padding-right: 15px;
+    width: 220px;
+    margin: 10px 0!important;
+}
+
+.select> select {
+    width: 100%;
+    color: black;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    /*line-height: 40px;*/
+    background-color: #2B2B2B;
+    border: 0;
+    color: white;
+    outline: none;
+    overflow: hidden;
+    -webkit-appearance: none;
+
+}
+
+.select_timer{
+    position: absolute;
+    left: 0;
+    top: 22px;
+    color: white;
+}
+
+.select_arrow{
+    position: absolute;
+    left: 80px;
+    top: 22px;
+    color: white;
+    z-index: 2;
+}
+.user{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #9B9B9B;
+    background-color: #9B9B9B ;
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.user-top{
+    margin-top: -5px;
+    display: block;
+}
+
+.call{
+    color: white;
+    margin: 18px;
+    float: left;
+    font-size: 20px;
+    position: relative;
+    display: block;
+}
+.call_number{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 11px;
+    top: 0px;
+    font-size: 10px;
+    background-color: #F6AF22;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.menu{
+    width: 100%;
+    background-color: black;
+}
+.my-nav {
+    width: 87.5%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+}
+.my-nav  li {
+    float: left;
+    display: inline-table;
+    width: 14.28%;
+    text-align: center;
+}
+
+.my-nav  li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.my-nav  li a:hover {
+
+    color: white
+}
+.my-language{
+    width: 12.5%;
+    float: left;
+}
+.img-language{
+    width: 20px;
+    height: 20px;
+    z-index: 222;
+    margin: 0 auto;
+    display: block;
+}
+
+.btc-container{
+    width: 100%;
+    background-color: #2a3041;
+}
+.btc-container_block{
+    width: 12.5%;
+    float: left;
+    color: white;
+}
+.btc_top-row{
+    width: 100%;
+    font-size: 14px;
+    line-height: 30px;
+}
+.btc_many{
+   float: right;
+    margin-right: 15px;
+}
+.btc_bottom{
+    width: 100%;
+
+    border-left: 4px solid #EF4364;
+    color: #EF4364;
+    font-size: 16px;
+}
+.btc_bottom-active{
+    color: #05bd9b;
+    border-left: 4px solid #05bd9b;
+}
+.btc_bottom_icon{
+    font-size: 26px!important;
+    margin: 0 10px;
+    line-height: 20px;
+}
+
+
+
+.brokers{
+    width: 100%;
+    background-color: #CBCBCB;
+    padding: 25px 0;
+}
+.banner{
+    width: 100%;
+    height: 80px;
+    margin: 25px 0;
+    display: block;
+    position: relative;
+}
+.banner_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left bottom;
+}
+.banner_btn{
+    line-height: 30px;
+    width: 110px;
+    background-color: #76b610;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.banner_btn:hover{
+    text-decoration: none;
+    color: white;
+    transform: scale(1.05);
+}
+.brokers_content{
+    background-color: white;
+    padding: 10px;
+    margin-top: 1px;
+}
+.my-cont-img{
+    display: inline-table;
+
+    position: relative;
+}
+.cont-img{
+    width: 30%;
+    float: left;
+}
+.brokers_content_img{
+    width: 100%;
+    object-fit: cover;
+
+}
+.block-title{
+    display: inline;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.certificate{
+    color: #F6AF22;
+}
+.certificate_min-txt{
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.block-row{
+    width: 65%;
+    font-size: 12px;
+    float: left;
+    margin: 0 10px;
+}
+.brokers_content_btn{
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    margin: 10px;
+    background-color: #2B2B2B;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.5s;
+}
+.brokers_content_btn:hover{
+  transform: scale(1.05);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-orange:hover{
+    color: #2B2B2B;
+}
+.btn-orange{
+    background-color: #F6AF22;
+    color: #2B2B2B;
+}
+.broker-crypto{
+    border-left: 1px solid #2B2B2B;
+}
+.broker_many-text{
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 15px;
+
+}
+.broker_many{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.cont-crypto-icon{
+    width: 100%;
+    display: inline-block;
+}
+.crypto-icon, .crypto-img{
+    width: 20px;
+    height: 20px;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #F6AF22;
+    color: white;
+}
+.gray{
+    background-color: #2B2B2B;
+}
+.blue{
+    background-color: #4ca1d9;
+}
+.dark-blue{
+    background-color: #096bb4;
+}
+
+.light-gray{
+    background-color: #d9d5d5;
+}
+.crypto-img{
+    border-radius: 0;
+    width: 30px;
+}
+.progress-bar{
+    float: left;
+    background-color: #F6AF22;
+    width: 50%;
+    height: 15px;
+}
+.progress-bar_text{
+    margin-right: 25%;
+    display: block;
+    margin-top: -3px;
+    float: right;
+}
+.padding-none{
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.right-sections{
+    background-color: white;
+    margin-top: 25px;
+}
+.registration-title{
+    width: 100%;
+    border-bottom: 1px solid #2B2B2B;
+    line-height: 50px;
+   font-weight: 900;
+    font-size: 20px;
+    margin: 0;
+    padding-left: 20px;
+}
+.registration-form{
+    width: 100%;
+}
+.btn-sigh-in{
+    float: left;
+    width: 40%;
+    margin: 5%;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #3b5995;
+    color: white;
+    font-size: 16px;
+}
+.btn-sigh-in:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-sigh-in_icon{
+    margin-right: 5px;
+}
+.red{
+    background-color: #e54840;
+}
+.registration_text{
+    text-align: center;
+    width: 100%;
+}
+.my-input{
+    width: 100%;
+    line-height: 40px;
+    border-radius: 3px;
+    margin: 5px 0;
+    font-size: 18px;
+    padding: 0 10px;
+}
