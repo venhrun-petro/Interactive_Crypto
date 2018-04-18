@@ -34,32 +34,51 @@
 <header >
     <div class="container">
             <div class="row my-col">
-                <div class="col-md-3 col-sm-3 col-xs-3"><a href="#first-section"> <img src="img/logo.png" class="top-logo" alt="logo"></a>
+                <div class="col-md-3 col-sm-3 col-xs-1"><a href="#first-section"> <img src="img/logo.png" class="top-logo sm_none" alt="logo">
+                    <img src="img/logo_2.png" class="top-logo sm-block" alt="logo"></a>
                 </div>
                 <div class="col-md-6 search-cont">
                     <div class="inp-relative"><input type="text" class="search" placeholder="Search Interactive Crypto"><span class="search_icon"><i class="fas fa-search"></i></span></div>
                 </div>
-                <div class="col-md-3 col-sm-9 col-xs-9">
+                <div class="col-md-3 col-sm-9 col-xs-10">
 
                     <div class="cont-right">
-                    <span class="select_timer"><i class="far fa-clock"></i></span>
-                    <span class="select_arrow"><i class="fas fa-caret-down"></i></span>
-                    <div class="select">
-                        <select>
-                            <option>
-                               9.38 AM</option>
-                            <option>9.38 AM</option>
-                            <option>9.38 AM</option>
-                        </select>
-                    </div>
-                    <div class="user">
+                    <span class="select_timer xs-none"><i class="far fa-clock"></i></span>
+                    <span class="select_arrow xs-none "><i class="fas fa-caret-down"></i></span>
+                            <div class="select xs-none ">
+                                <a href="#" class="slct"> 9.38 AM</a>
+                                <ul class="drop">
+                                    <li> 9.37 AM</li>
+                                    <li> 9.36 AM</li>
+                                    <li> 9.35 AM</li>
+                                    <li> 9.34 AM</li>
+                                    <li> 9.33 AM</li>
+                                </ul>
+
+                            </div>
+                    <div class="user sm_none">
                         <span class="user-top"><i class="fas fa-user"></i></span>
                     </div>
-                    <div class="call"><span class="call_icon"><i class="fas fa-bell"></i></span><span class="call_number">2</span></div>
+                    <div class="call sm_none">
+                        <span class="call_icon"><i class="fas fa-bell"></i></span><span class="call_number">2</span>
+                    </div>
+                        <div class="btn-right sm-block">
+                            <button type="button" class="sign-in-btn btn-orange footer-btn">SIGN UP</button>
+                        </div>
+                        <div class="btn-right sm-block btn-right_float-right">
+                        <div class="burger clearfix ">
+                            <div class=burger-menu></div>
+                            <div class=burger-menu></div>
+                            <div class=burger-menu></div>
+                        </div>
+                        </div>
+                </div>
+
+
                 </div>
                 </div>
 
-            </div>
+
     </div>
         <div class="menu">
             <div class="container">
@@ -73,10 +92,17 @@
             <li><a href="#contacts">Wallet</a></li>
         </ul>
 
+            <div class="select language xs-none">
+                <a href="#" class="slct-2">  <img class="img-language" src="img/americ_1.png" alt="america"></a>
+                <ul class="drop-2">
+                    <li> <img class="img-language" src="img/americ_1.png" alt="america"></li>
+                    <li> <img class="img-language" src="img/americ_1.png" alt="america"></li>
+                    <li> <img class="img-language" src="img/americ_1.png" alt="america"></li>
+                    <li> <img class="img-language" src="img/americ_1.png" alt="america"></li>
+                    <li> <img class="img-language" src="img/americ_1.png" alt="america"></li>
+                </ul>
 
-
-                    <img class="img-language" src="img/america.png" alt="america"></div>
-
+            </div>
                    <!-- <select>
                         <option><a><img class="img-language" src="img/america.png" alt="america"></a>
                             </option>
@@ -141,27 +167,33 @@
 
                 <div class="col-md-4 col-sm-12  right-sections sm-block">
                     <div class="row">
+
                         <h1 class="registration-title">CREATE ACCOUNT</h1>
-
-
+                    </div>
+                        <div class="col-sm-6">
                         <a class="btn-sigh-in"><span class="btn-sigh-in_icon"><i class="fab fa-facebook-square"></i></span>Facebook</a>
                         <a class="btn-sigh-in red"><span class="btn-sigh-in_icon"><i class="fab fa-google"></i></span>Google</a>
-                    </div>
+
                     <form class="registration-form">
                         <p class="registration_text">OR</p>
-                        <input class="my-input" type="text" placeholder="Full Name">
-                        <input class="my-input" type="email" placeholder="Email Address">
-                        <input class="my-input" type="password" placeholder="Password">
-                        <select class="my-input select-coutry" >
+                        <input class="my-input" type="text" placeholder="Full Name" required>
+                        <input class="my-input" type="email" placeholder="Email Address" required>
+                        <input class="my-input" type="password" placeholder="Password" required>
+                        <select class="my-input select-coutry" required>
                             <option>
                                 Select Country</option>
-                            <option>9.38 AM</option>
-                            <option>9.38 AM</option>
+                            <option>England</option>
+                            <option>Estonia</option>
+                            <option>Finland</option>
+                            <option>Ukraine</option>
                         </select>
-                        <ul class="select-american"></ul>
-                        <input class="my-input input-number" type="number" placeholder="Phone Number">
+                        <div class="select-american">
+                            <div class="slct-3">  <img class="img-language" src="img/americ_1.png" alt="america"><strong class="slc-number"> +1</strong></div>
 
-                        <button type="button" class="sign-in-btn btn-orange">SIGN UP</button>
+                        </div>
+                        <input class="my-input input-number" type="text" placeholder="Phone Number" required>
+
+                        <button type="submit" class="sign-in-btn btn-orange">SIGN UP</button>
 
                     </form>
 
@@ -170,7 +202,19 @@
                         <label class="registration-label"><input class="my-checkbox" type="checkbox" />I agree to Terms & Privacy</label>
                         <label class="registration-label"><input class="my-checkbox" type="checkbox" />Sign up for newsletter</label>
                     </div>
+
                 </div>
+                    <div class="col-sm-6 xs-none">
+                        <p class="crypto-info"><strong><i class="fas fa-check"></i> COIN ANALYSIS & WATCHILIST -</strong><br>
+                        Analuse the latest chart trends. Create a watchlist to keep track of your favorite altcoin</p>
+                        <p class="crypto-info"><strong><i class="fas fa-check"></i> ADD TRANSACTIONS WITH EASE -</strong><br>
+                        Simply search for the cryptocurrency you want to buy or sell, chose the exchange/broker and the transaction data</p>
+                        <p class="crypto-info"><strong><i class="fas fa-check"></i> CRYPTO NEWS - </strong><br>
+                        Stay up to data with the latest Cryptocurrency and Altcoin news and our daily technical analysis reports.</p>
+                        <a class="crypto-info crypto-info_link">Have an account?  <strong>login</strong></a>
+                    </div>
+                </div>
+
                 <div class="col-md-8 col-sm-12 index">
                     <div class="banner sm_none">
                         <img src="img/my-baner.png" class="banner_img" alt="baner_v">
@@ -181,31 +225,42 @@
                         <div class="row">
                             <div class="col-md-9 col-sm-9 my-cont-img">
                                 <div class="cont-img"><img src="img/download-6.png" class="brokers_content_img" alt="etoro"></div>
+                                <div class="broker_content-txt">
                                 <h1 class="block-title">ETORO <span class="certificate"><i class="fas fa-certificate"></i></span></h1><p class="certificate_min-txt"> Our Pick</p>
-                                <p class="block-row">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
+                                    <p class="clik-more xs-block question">Preview <span class="preview-span"><i class="fas fa-caret-right"></i></span><span class="preview-revers"><i class="fas fa-caret-down"></i></span></p>
+                                    <p class="block-row min-none">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
                                     In 2013, she recelved recognition from the Belize International Financlal Services Commission her high ethics, client protection and fund secutity...</p>
-                                <a class="brokers_content_btn">READ REWIEV</a>
+                                <div class="container-btn min-none"><a class="brokers_content_btn read-right">READ REWIEV</a>
                                 <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                </div>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-sm-3 broker-crypto">
+                            <div class="col-md-3 col-sm-3 col-xs-5 broker-crypto">
                                 <p class="broker_many-text">Mimimum Deposite</p>
                                 <p class="broker_many">$250</p>
                                 <p class="broker_many-text">Crypto</p>
                                 <div class="cont-crypto-icon">
                                     <div class="crypto-icon"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon gray"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon dark-blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon light-gray"><i class="fab fa-btc"></i></div>
+                                    <div class="crypto-icon gray"><i class="fab fa-ethereum"></i></div>
+                                    <div class="crypto-icon blue"><img class="" src="img/ripple.png" align=""></div>
+                                    <div class="crypto-icon dark-blue"><img class="" src="img/icon_bitcoin/dash.png" align=""></div>
+                                    <div class="crypto-icon light-gray"><img class="" src="img/icon_bitcoin/litecoin.png" align=""></div>
                                 </div>
                                 <p class="broker_many-text">Regulation</p>
-                                <div class="cont-crypto-icon">
-                                    <div class="crypto-img"><img class="" src="" align=""></div>
-                                    <div class="crypto-img"><img class="" src="" align=""></div>
+                                <div class="cont-crypto-icon reg-icon">
+                                    <div class="crypto-img"><img class="" src="img/cyprus.png" align=""></div>
+                                    <div class="crypto-img"><img class="" src="img/made.png" align=""></div>
+                                    <div class="crypto-img"><img class="" src="img/france.png" align=""></div>
+                                    <div class="crypto-img"><img class="" src="img/italii.png" align=""></div>
 
                                 </div>
                                 <p class="broker_many-text">Our Score</p>
                                 <div class="progress-bar"></div><p class="progress-bar_text">9.7</p>
+                            </div>
+                            <div class="col-xs-7 broker-crypto">
+                                <div class="container-btn xs-block"><a class="brokers_content_btn read-right">READ REWIEV</a>
+                                    <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                </div>
                             </div>
 
                         </div>
@@ -213,32 +268,42 @@
                     <div class="brokers_content">
                         <div class="row">
                             <div class="col-md-9 col-sm-9 my-cont-img">
-                                <div class="cont-img"><img src="img/download-1.png" class="brokers_content_img" alt="etoro"></div>
+                                <div class="cont-img black"><img src="img/download-1.png" class="brokers_content_img" alt="etoro"></div>
+                                <div class="broker_content-txt">
                                 <h1 class="block-title">ALVEXO <span class="certificate"><i class="fas fa-certificate"></i></span></h1><p class="certificate_min-txt"> Our Pick</p>
-                                <p class="block-row">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
+                                    <p class="clik-more xs-block question">Preview <span class="preview-span"><i class="fas fa-caret-right"></i></span><span class="preview-revers"><i class="fas fa-caret-down"></i></span></p>
+                                    <p class="block-row min-none">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
                                     In 2013, she recelved recognition from the Belize International Financlal Services Commission her high ethics, client protection and fund secutity...</p>
-                                <a class="brokers_content_btn">READ REWIEV</a>
-                                <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                    <div class="container-btn min-none"><a class="brokers_content_btn read-right">READ REWIEV</a>
+                                        <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-sm-3 broker-crypto">
+                            <div class="col-md-3 col-sm-3 col-xs-5 broker-crypto">
                                 <p class="broker_many-text">Mimimum Deposite</p>
                                 <p class="broker_many">$100</p>
                                 <p class="broker_many-text">Crypto</p>
                                 <div class="cont-crypto-icon">
                                     <div class="crypto-icon"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon gray"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon dark-blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon light-gray"><i class="fab fa-btc"></i></div>
+                                    <div class="crypto-icon gray"><i class="fab fa-ethereum"></i></div>
+                                    <div class="crypto-icon blue"><img class="" src="img/ripple.png" align=""></div>
+                                    <div class="crypto-icon dark-blue"><img class="" src="img/icon_bitcoin/dash.png" align=""></div>
+                                    <div class="crypto-icon light-gray"><img class="" src="img/icon_bitcoin/litecoin.png" align=""></div>
                                 </div>
                                 <p class="broker_many-text">Regulation</p>
-                                <div class="cont-crypto-icon">
-                                    <div class="crypto-img"><img class="" src="" align=""></div>
-
+                                <div class="cont-crypto-icon reg-icon">
+                                    <div class="crypto-img"><img class="" src="img/cyprus.png" align=""></div>
+                                    <div class="crypto-img"><img class="" src="img/made.png" align=""></div>
+                                    <div class="crypto-img"><img class="" src="img/france.png" align=""></div>
 
                                 </div>
                                 <p class="broker_many-text">Our Score</p>
                                 <div class="progress-bar"></div><p class="progress-bar_text">9.7</p>
+                            </div>
+                            <div class="col-xs-7 broker-crypto">
+                                <div class="container-btn xs-block"><a class="brokers_content_btn read-right">READ REWIEV</a>
+                                    <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                </div>
                             </div>
 
                         </div>
@@ -247,31 +312,41 @@
                         <div class="row">
                             <div class="col-md-9 col-sm-9 my-cont-img">
                                 <div class="cont-img"><img src="img/download-11.png" class="brokers_content_img" alt="etoro"></div>
+                                <div class="broker_content-txt">
                                 <h1 class="block-title">UFX.COM <span class="certificate"><i class="fas fa-certificate"></i></span></h1><p class="certificate_min-txt"> Our Pick</p>
-                                <p class="block-row">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
+                                    <p class="clik-more xs-block question">Preview <span class="preview-span"><i class="fas fa-caret-right"></i></span><span class="preview-revers"><i class="fas fa-caret-down"></i></span></p>
+                                <p class="block-row min-none">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
                                     In 2013, she recelved recognition from the Belize International Financlal Services Commission her high ethics, client protection and fund secutity...</p>
-                                <a class="brokers_content_btn">READ REWIEV</a>
-                                <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                    <div class="container-btn min-none"><a class="brokers_content_btn read-right">READ REWIEV</a>
+                                        <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-sm-3 broker-crypto">
+                            <div class="col-md-3 col-sm-3 col-xs-5 broker-crypto">
                                 <p class="broker_many-text">Mimimum Deposite</p>
                                 <p class="broker_many">$100</p>
                                 <p class="broker_many-text">Crypto</p>
                                 <div class="cont-crypto-icon">
                                     <div class="crypto-icon"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon gray"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon dark-blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon light-gray"><i class="fab fa-btc"></i></div>
+                                    <div class="crypto-icon gray"><i class="fab fa-ethereum"></i></div>
+                                    <div class="crypto-icon blue"><img class="" src="img/ripple.png" align=""></div>
+                                    <div class="crypto-icon dark-blue"><img class="" src="img/icon_bitcoin/dash.png" align=""></div>
+                                    <div class="crypto-icon light-gray"><img class="" src="img/icon_bitcoin/litecoin.png" align=""></div>
                                 </div>
                                 <p class="broker_many-text">Regulation</p>
-                                <div class="cont-crypto-icon">
-                                    <div class="crypto-img"><img class="" src="" align=""></div>
+                                <div class="cont-crypto-icon reg-icon">
+                                    <div class="crypto-img"><img class="" src="img/made.png" align=""></div>
+                                    <div class="crypto-img"><img class="" src="img/france.png" align=""></div>
 
 
                                 </div>
                                 <p class="broker_many-text">Our Score</p>
                                 <div class="progress-bar"></div><p class="progress-bar_text">9.7</p>
+                            </div>
+                            <div class="col-xs-7 broker-crypto">
+                                <div class="container-btn xs-block"><a class="brokers_content_btn read-right">READ REWIEV</a>
+                                    <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                </div>
                             </div>
 
                         </div>
@@ -279,38 +354,48 @@
                     <div class="brokers_content">
                         <div class="row">
                             <div class="col-md-9 col-sm-9 my-cont-img">
-                                <div class="cont-img"><img src="img/download-2.png" class="brokers_content_img" alt="etoro"></div>
+                                <div class="cont-img options-black"><img src="img/download-2.png" class="brokers_content_img" alt="etoro"></div>
+                                <div class="broker_content-txt">
                                 <h1 class="block-title">24OPTION.COM <span class="certificate"><i class="fas fa-certificate"></i></span></h1><p class="certificate_min-txt"> Our Pick</p>
-                                <p class="block-row">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
+                                    <p class="clik-more xs-block question">Preview <span class="preview-span"><i class="fas fa-caret-right"></i></span><span class="preview-revers"><i class="fas fa-caret-down"></i></span></p>
+                                    <p class="block-row min-none">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
                                     In 2013, she recelved recognition from the Belize International Financlal Services Commission her high ethics, client protection and fund secutity...</p>
-                                <a class="brokers_content_btn">READ REWIEV</a>
-                                <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                    <div class="container-btn min-none"><a class="brokers_content_btn read-right">READ REWIEV</a>
+                                        <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-sm-3 broker-crypto">
+                            <div class="col-md-3 col-sm-3 col-xs-5 broker-crypto">
                                 <p class="broker_many-text">Mimimum Deposite</p>
                                 <p class="broker_many">$100</p>
                                 <p class="broker_many-text">Crypto</p>
                                 <div class="cont-crypto-icon">
                                     <div class="crypto-icon"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon gray"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon dark-blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon light-gray"><i class="fab fa-btc"></i></div>
+                                    <div class="crypto-icon gray"><i class="fab fa-ethereum"></i></div>
+                                    <div class="crypto-icon blue"><img class="" src="img/ripple.png" align=""></div>
+                                    <div class="crypto-icon dark-blue"><img class="" src="img/icon_bitcoin/dash.png" align=""></div>
+                                    <div class="crypto-icon light-gray"><img class="" src="img/icon_bitcoin/litecoin.png" align=""></div>
                                 </div>
                                 <p class="broker_many-text">Regulation</p>
-                                <div class="cont-crypto-icon">
-                                    <div class="crypto-img"><img class="" src="" align=""></div>
+                                <div class="cont-crypto-icon reg-icon">
+                                    <div class="crypto-img"><img class="" src="img/made.png" align=""></div>
+                                    <div class="crypto-img"><img class="" src="img/france.png" align=""></div>
 
 
                                 </div>
                                 <p class="broker_many-text">Our Score</p>
                                 <div class="progress-bar"></div><p class="progress-bar_text">9.7</p>
                             </div>
+                            <div class="col-xs-7 broker-crypto">
+                                <div class="container-btn xs-block"><a class="brokers_content_btn read-right">READ REWIEV</a>
+                                    <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
-                    <div class="brokers_content padding-none">
-                        <div class="banner sm_none">
+                    <div class="brokers_content padding-none xs-none">
+                        <div class="banner ">
                             <img src="img/my-baner.png" class="banner_img" alt="baner">
                             <a class="banner_btn">Trade Dash</a>
                         </div>
@@ -320,33 +405,42 @@
 
                     <div class="brokers_content">
                         <div class="row">
-                            <div class="col-md-9 col-sm-9 my-cont-img">
+                            <div class="col-md-9 col-sm-9  my-cont-img">
                                 <div class="cont-img"><img src="img/download-7.png" class="brokers_content_img" alt="etoro"></div>
-                                <h1 class="block-title">MARKETS.COM <span class="certificate"><i class="fas fa-certificate"></i></span></h1><p class="certificate_min-txt"> Our Pick</p>
-                                <p class="block-row">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
+                                <div class="broker_content-txt">
+                                <h2 class="block-title">MARKETS.COM <span class="certificate"><i class="fas fa-certificate"></i></span></h2><p class="certificate_min-txt"> Our Pick</p>
+                                    <p class="clik-more xs-block question">Preview <span class="preview-span"><i class="fas fa-caret-right"></i></span><span class="preview-revers"><i class="fas fa-caret-down"></i></span></p>
+                                    <p class="block-row xs-none">UFX is broker platform. It was founded in 2011 it was regulated by the European Unlon.<br>
                                     In 2013, she recelved recognition from the Belize International Financlal Services Commission her high ethics, client protection and fund secutity...</p>
-                                <a class="brokers_content_btn">READ REWIEV</a>
-                                <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                    <div class="container-btn min-none"><a class="brokers_content_btn read-right">READ REWIEV</a>
+                                        <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-sm-3 broker-crypto">
+                            <div class="col-md-3 col-sm-3 col-xs-5 broker-crypto">
                                 <p class="broker_many-text">Mimimum Deposite</p>
                                 <p class="broker_many">$100</p>
                                 <p class="broker_many-text">Crypto</p>
                                 <div class="cont-crypto-icon">
                                     <div class="crypto-icon"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon gray"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon dark-blue"><i class="fab fa-btc"></i></div>
-                                    <div class="crypto-icon light-gray"><i class="fab fa-btc"></i></div>
+                                    <div class="crypto-icon gray"><i class="fab fa-ethereum"></i></div>
+                                    <div class="crypto-icon blue"><img class="" src="img/ripple.png" align=""></div>
+                                    <div class="crypto-icon dark-blue"><img class="" src="img/icon_bitcoin/dash.png" align=""></div>
+                                    <div class="crypto-icon light-gray"><img class="" src="img/icon_bitcoin/litecoin.png" align=""></div>
                                 </div>
                                 <p class="broker_many-text">Regulation</p>
-                                <div class="cont-crypto-icon">
-                                    <div class="crypto-img"><img class="" src="" align=""></div>
+                                <div class="cont-crypto-icon reg-icon">
 
+                                    <div class="crypto-img"><img class="" src="img/france.png" align=""></div>
 
                                 </div>
                                 <p class="broker_many-text">Our Score</p>
                                 <div class="progress-bar"></div><p class="progress-bar_text">9.7</p>
+                            </div>
+                            <div class="col-xs-7 broker-crypto">
+                                <div class="container-btn xs-block"><a class="brokers_content_btn read-right">READ REWIEV</a>
+                                    <a class="brokers_content_btn btn-orange">START TRADING</a>
+                                </div>
                             </div>
 
                         </div>
@@ -363,19 +457,24 @@
                     </div>
                     <form class="registration-form">
                         <p class="registration_text">OR</p>
-                        <input class="my-input" type="text" placeholder="Full Name">
-                        <input class="my-input" type="email" placeholder="Email Address">
-                        <input class="my-input" type="password" placeholder="Password">
-                        <select class="my-input select-coutry" >
+                        <input class="my-input" type="text" placeholder="Full Name" required>
+                        <input class="my-input" type="email" placeholder="Email Address" required>
+                        <input class="my-input" type="password" placeholder="Password" required>
+                        <select class="my-input select-coutry" ty required>
                             <option>
                                 Select Country</option>
-                            <option>9.38 AM</option>
-                            <option>9.38 AM</option>
+                            <option>England</option>
+                            <option>Estonia</option>
+                            <option>Finland</option>
+                            <option>Ukraine</option>
                         </select>
-                        <ul class="select-american"></ul>
-                        <input class="my-input input-number" type="number" placeholder="Phone Number">
+                        <div class="select-american">
+                            <div class="slct-3">  <img class="img-language" src="img/americ_1.png" alt="america"><strong class="slc-number"> +1</strong></div>
 
-                        <button type="button" class="sign-in-btn btn-orange">SIGN UP</button>
+                            </div>
+                        <input class="my-input input-number" type="text" placeholder="Phone Number" required>
+
+                        <button type="submit" class="sign-in-btn btn-orange">SIGN UP</button>
 
                     </form>
 
@@ -400,7 +499,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 right-sections xs-none">
+                <div class="col-md-4 col-sm-6 right-sections border-right xs-none">
                     <div class="row">
                             <div class="watchlist">
                         <h1 class="registration-title">WATCHLIST</h1>
@@ -525,22 +624,21 @@
                 </div>
 
 
-                <div class="col-md-4 col-sm-6 right-sections float-right">
+                <div class="col-md-4 col-sm-6 right-sections  float-right">
                     <h1 class="registration-title border-none">WHAT'S NEW</h1>
 
                     <div class="tabs" id="tabs">
                     <div class="tab-cont">
-                        <h4 class="tab whiteborder">
-                            <span>NEWS</span>
+                        <h4 class="tab whiteborder">NEWS
                         </h4>
                         <h4 class="tab">
-                            <span> REVIEWS</span>
+                            REVIEWS
                         </h4>
                         <h4 class="tab">
-                            <span> BROKERS</span>
+                            BROKERS
                         </h4>
                         <h4 class="tab">
-                            <span> WALLET</span>
+                             WALLET
                         </h4>
                     </div>
 
@@ -577,6 +675,18 @@
                                 <p class="tabs_bloc-title">Ethereum's Founder Tackles Fake News</p>
                             </div>
                             <div class="row top-border">
+                                <p class="tabs_more">SEE MORE NEWS</p>
+                            </div>
+                        </div>
+                        <div class="tabContent">
+                            <div class="tabs-cont-img"><img src="img/Performance.png" class="tabs-img" alt="tab"></div>
+                            <p class="tabs_title">The Performance of Cryptocurrencies Under the Rigors of Mathematic - An Overvalued Bitcoin is Detrimental to Ether</p>
+                            <div class="row top-border">
+                                <div class="tabs_bloc-cont-img"><img src="img/ethereum.png" class="tabs_block-img" alt=""></div>
+                                <p class="tabs_bloc-title">Ethereum's Founder Tackles Fake News</p>
+                            </div>
+
+                            <div class="row top-border">
                                 <div class="tabs_bloc-cont-img"><img src="img/Technical.png" class="tabs_block-img" alt=""></div>
                                 <p class="tabs_bloc-title">Ethereum's Founder Tackles Fake News</p>
                             </div>
@@ -598,28 +708,6 @@
                             <div class="row top-border">
                                 <div class="tabs_bloc-cont-img"><img src="img/Technical.png" class="tabs_block-img" alt=""></div>
                                 <p class="tabs_bloc-title">Ethereum's Founder Tackles Fake News</p>
-                            </div>
-                            <div class="row top-border">
-                                <p class="tabs_more">SEE MORE NEWS</p>
-                            </div>
-                        </div>
-                        <div class="tabContent">
-                            <div class="tabs-cont-img"><img src="img/Performance.png" class="tabs-img" alt="tab"></div>
-                            <p class="tabs_title">The Performance of Cryptocurrencies Under the Rigors of Mathematic - An Overvalued Bitcoin is Detrimental to Ether</p>
-                            <div class="row top-border">
-                                <div class="tabs_bloc-cont-img"><img src="img/ethereum.png" class="tabs_block-img" alt=""></div>
-                                <p class="tabs_bloc-title">Ethereum's Founder Tackles Fake News</p>
-                            </div>
-                            <div class="row top-border">
-                                <div class="tabs_bloc-cont-img"><img src="img/bitcoin.png" class="tabs_block-img" alt=""></div>
-                                <p class="tabs_bloc-title">Ethereum's Founder Tackles Fake News</p>
-                            </div>
-                            <div class="row top-border">
-                                <div class="tabs_bloc-cont-img"><img src="img/Technical.png" class="tabs_block-img" alt=""></div>
-                                <p class="tabs_bloc-title">Ethereum's Founder Tackles Fake News</p>
-                            </div>
-                            <div class="row top-border">
-                                <p class="tabs_more">SEE MORE NEWS</p>
                             </div>
                         </div>
                 </div>
@@ -641,9 +729,11 @@
 
             <div class="col-sm-12 col-xs-12 subscribe sm-block">
                 <div class="sm-center">
-                <h1 class="subscribe_tile">Sybscribe to our newsletter:</h1>
-                <input class="subscribe_input" type="email" placeholder="Email Addres">
-                <button class="subscribe_btn">Subscribe</button>
+                    <form>
+                        <h1 class="subscribe_tile">Sybscribe to our newsletter:</h1>
+                        <input class="subscribe_input" type="email" placeholder="Email Addres" required>
+                        <button type="submit" class="subscribe_btn">Subscribe</button>
+                    </form>
                 </div>
             </div>
 
@@ -672,9 +762,11 @@
     </div>
 
             <div class="col-md-4 subscribe sm_none">
+                <form>
                 <h1 class="subscribe_tile">Sybscribe to our newsletter:</h1>
-                <input class="subscribe_input" type="email" placeholder="Email Addres">
-                <button class="subscribe_btn">Subscribe</button>
+                <input class="subscribe_input" type="email" placeholder="Email Addres" required>
+                <button type="submit" class="subscribe_btn">Subscribe</button>
+                </form>
             </div>
 
     </div>
@@ -738,6 +830,85 @@
 <!-- Load CSS -->
 
 <script>
+    $(function() {
+        $('.question').on('click', function(){
+            $(this).toggleClass('question-revers');
+            $(this).next().slideToggle(1000);
+        });
+
+    });
+    $(".menu").fadeOut(function () {
+        textShowing = true;
+    });
+    $('.burger').removeClass('opened');
+    $(".menu").css("display","none");
+    $('.header').removeClass('header-color');
+    $('body, html').animate({scrollTop:top},1000);
+
+    var textShowing=true;
+    $("section").click(function () {
+        $(".menu").fadeOut(function () {
+            textShowing = true;
+            $('.burger').removeClass('opened');
+            $(".menu").css("display","none");
+            $('.header').removeClass('header-color');
+        });
+    });
+
+
+
+    $(".burger").click(function(){
+        $('.menu').slideToggle();
+
+    });
+
+    $('.burger').click(function(){
+        $('.burger').toggleClass('opened');
+        $('.header').toggleClass('header-color');
+        $('.top_nav').click(function(){
+            $('.burger').removeClass('opened');
+            $(".top_nav").css("display","none");
+        });
+    });
+
+
+
+    $('.slct').click(function(){
+        var dropBlock = $(this).parent().find('.drop');
+        if( dropBlock.is(':hidden') ) {
+            dropBlock.slideDown();
+            $(this).addClass('active');
+            $('.drop').find('li').click(function(){
+                var selectResult = $(this).html();
+                $(this).parent().parent().find('input').val(selectResult);
+                $('.slct').removeClass('active').html(selectResult);
+                dropBlock.slideUp();
+            });
+        } else {
+            $(this).removeClass('active');
+            dropBlock.slideUp();
+        }
+        return false;
+    });
+    $('.slct-2').click(function(){
+        var dropBlock = $(this).parent().find('.drop-2');
+        if( dropBlock.is(':hidden') ) {
+            dropBlock.slideDown();
+            $(this).addClass('active');
+            $('.drop-2').find('li').click(function(){
+                var selectResult = $(this).html();
+                $(this).parent().parent().find('input').val(selectResult);
+                $('.slct-2').removeClass('active').html(selectResult);
+                dropBlock.slideUp();
+            });
+        } else {
+            $(this).removeClass('active');
+            dropBlock.slideUp();
+        }
+        return false;
+    });
+
+
 
     var tab;
     var tabContent;
