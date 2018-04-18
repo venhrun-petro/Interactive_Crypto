@@ -866,7 +866,9 @@ line-height: 45px;
     padding-top: 50px;
 }
 
-
+.sm-none{
+    display: block;
+}
 .sm-block{
     display: none;
 }
