@@ -866,7 +866,7 @@ line-height: 45px;
     padding-top: 50px;
 }
 
-.sm-none{
+.sm_none{
     display: block;
 }
 .sm-block{
@@ -886,7 +886,7 @@ line-height: 45px;
     .index2{
         z-index: 1111;
     }
-.sm-none{
+.sm_none{
     display: none;
 }
 
