@@ -607,6 +607,7 @@ p.registration_text:before{
 .watchlist{
     border-bottom: 1px solid #2B2B2B;
     display: table;
+    width: 100%;
 }
 .content_col-txt{
     width: 100%;
@@ -646,5 +647,278 @@ p.registration_text:before{
 }
 .active-true{
     background-color: #05bd9b;
+
+}
+.float-right{
+    float: right;
+}
+
+
+.border-none{
+    border: none;
+}
+
+.tab-cont{
+    width: 100%;
+}
+.tab{
+    float: left;
+    width: 25%;
+    font-size: 16px;
+    font-weight: 700;
+    color: #B2B2B2;
+    text-align: center;
+    position: relative;
+    z-index: 2222;
+}
+.tab span{
+    z-index: 11;
+}
+.whiteborder span{
+    color: #F6AF22;
+    border-bottom: 4px solid #F6AF22;
+}
+
+
+.show {
+   display: none;
+    transition: 1s ease-out;
+   }
+
+.hide {
+   display: block;
+    transition: 1s ease-out;
+     }
+.tabContent{
+    display: block;
+    margin-top: 10px;
+}
+.tabs-cont-img{
+    width: 100%;
+}
+.tabs-img, .tabs_block-img{
+    width: 100%;
+    object-fit: cover;
+}
+.container_tabContent{
+    display: inline-block;
+}
+
+.tabs_title, .tabs_bloc-title{
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+
+.tabs_bloc-cont-img{
+    widows: 75px;
+    height: 75px;
+    margin: 10px 10px 10px 20px;
+    float: left;
+}
+.top-border{
+    border-top: 1px solid #CBCBCB;;
+}
+.tabs_more{
+line-height: 45px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+/*footer*/
+.followers{
+    display: table;
+    width: 500px;
+    border: 2px solid #F6AF22;
+    border-radius: 3px;
+}
+.followers_block-icon{
+    float: left;
+    width: 25%;
+
+}
+.followers_icon{
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+    border-radius: 3px;
+}
+.followers_title{
+    line-height: 12px;
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.followers_min-txt{
+    font-size: 12px;
+    font-weight: 400;
+}
+.footer-bottom, .footer-top{
+    width: 100%;
+    display: table;
+
+}
+
+.subscribe_tile{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin-top: 0px;
+    width: 100%;
+}
+.subscribe_input{
+    width: 260px;
+}
+.subscribe_btn{
+    background-color: #F6AF22;
+    border: none;
+    line-height: 25px;
+    color: white;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.footer-top{
+    margin: 20px 0;
+}
+
+.footer-bottom{
+    background-color: #2B2B2B;
+    padding-top: 60px;
+}
+.footer-btn{
+    width: auto;
+    padding: 0 60px;
+    color: white;
+}
+.footer-bottom ul {
+    padding: 0;
+    margin-left: 20px;
+}
+.footer-bottom ul li{
+    float: left;
+    width: 50%;
+    margin: 5px 0;
+    text-align: left;
+    list-style: none;
+    font-size: 12px;
+}
+.footer-bottom ul li a, .bottom-nav ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.app_title{
+    width: 100%;
+    color: white;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.app_conteiner{
+    width: 50%;
+    float: left;
+}
+.app_telephone{
+    max-height: 200px;
+}
+.app_telephone, .app_img-store{
+    width: 100%;
+    object-fit: contain;
+    float: left;
+}
+.app_img-store{
+    width: auto;
+    margin: 10px 20px;
+}
+.app_conteiner-right{
+    padding-top: 50px;
+}
+.register{
+    width: 100%;
+    color: white;
+    margin: 5px 10px;
+
+}
+.bottom-nav ul{
+    padding: 0;
+    width: 100%;
+    display: table;
+    margin: 0 0 20px 0;
+
+}
+.bottom-nav ul li{
+    float: left;
+    margin: 5px 10px;
+    width: auto;
+    font-size: 12px;
+    list-style: none;
+}
+.bottom-nav{
+    padding-top: 50px;
+}
+
+
+.sm-block{
+    display: none;
+}
+/*footer*/
+
+
+@media (max-width: 991px) {
+.menu, .search-cont{
+    display: none;
+}
+    .index{
+        z-index: 1;
+        display: contents;
+    }
+    .index2{
+        z-index: 1111;
+    }
+.sm-none{
+    display: none;
+}
+
+    .sm-block{
+    display: block;
+}
+.btc-container_block{
+    width: 16.6666%;
+}
+.sm-center{
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 350px;
+}
+.footer-bottom .container{
+    width: 95%;
+}
+    .footer-btn{
+     padding: 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .xs-none{
+        display: none;
+    }
+    .btc-container_block{
+        width: 33.333333%;
+    }
+.followers{
+ width: 100%;
+}
+    .footer-bottom .container{
+    width: 60%;
+        min-width: 300px;
+    }
 
 }
