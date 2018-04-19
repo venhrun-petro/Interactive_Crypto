@@ -186,10 +186,10 @@ p.registration_text:before{right:0;left:auto;}
 .burger.opened .burger-menu:nth-child(1){-webkit-transition-delay:0.3s;-o-transition-delay:0.3s;transition-delay:0.3s;height:3px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);width:100%;}
 .burger.opened .burger-menu:nth-child(2){opacity:0;height:0;margin:-3px;width:100%;}
 .burger.opened .burger-menu:last-child{-webkit-transition-delay:0.3s;-o-transition-delay:0.3s;transition-delay:0.3s;height:3px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);width:100%;}
-.xs-block{display:none;}.footer-text{color: white; text-align: justify;font-size: 12px}
-@media (max-width:1200px) and (min-width:767px){.subscribe_input{min-width:195px;}.botoom-margin{
-    margin: 40px 0 20px 0;
-                                                                                  }
+.xs-block{display:none;}.footer-text{color: white; text-align: justify;font-size: 12px}.botoom-margin{
+                                                                                           margin: 40px 0 20px 0;}
+@media (max-width:1200px) and (min-width:767px){.subscribe_input{min-width:195px;}
+                                                                                 
 }
 @media (max-width:991px){.menu, .search-cont{display:none;}
 .index{z-index:1;display:contents;}
