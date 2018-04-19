@@ -204,6 +204,7 @@ p.registration_text:before{right:0;left:auto;}
 .subscribe_btn{line-height:32px;}
 .subscribe_input{padding:5px;}
 .top-logo{width:40px;}
+    footer .top-logo{width:150px;}
 p.registration_text:after, p.registration_text:before{top:93%;}
 }
 @media (max-width:767px){.xs-none{display:none;}
@@ -216,7 +217,7 @@ p.registration_text:after, p.registration_text:before{top:93%;}
 .btn-right{margin:0;}
 .my-nav li{width:33.3333%;text-align:left;padding-left:10px;}
 .border-right, .float-right, .broker-crypto{border:none;}
-footer .top-logo{width:200px;}
+
 }
 @media (max-width:480px){.my-nav li{width:50%;}
 .min-none{display:none;}
