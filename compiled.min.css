@@ -370,13 +370,13 @@ position: absolute;
     margin: 10px;
 
 }
-.brokers_content_btn:hover{
+.brokers_content_btn:hover, .sign-in-btn:hover{
   transform: scale(1.05);
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
-.btn-orange:hover{
+.btn-orange:hover, .sign-in-btn:hover{
     color: #2B2B2B;
 }
 .btn-orange{
@@ -484,11 +484,13 @@ position: absolute;
     background-color: #3b5995;
     color: white;
     font-size: 16px;
+    transition: all 0.5s;
 }
-.btn-sigh-in:hover{
+.btn-sigh-in:hover, .btn-trade:hover, .subscribe_btn:hover{
     color: white;
     cursor: pointer;
     text-decoration: none;
+    transform: scale(1.05);
 }
 .btn-sigh-in_icon{
     margin-right: 5px;
@@ -585,6 +587,7 @@ p.registration_text:before{
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     margin: 10px 0;
+    transition: all 0.5s;
 }
 .registration-label{
     width: 50%;
@@ -616,14 +619,24 @@ p.registration_text:before{
 }
 .soz{
     width: calc(25% - 2px);
-    /* height: 70px; */
-    /*background-color: black;*/
     float: left;
     margin-right: 2px;
     color: white;
     text-align: center;
     line-height: 70px;
     font-size: 35px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.soz:hover, .soz:focus, .soz:active, .followers_icon:hover{
+    color: #2B2B2B;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+}
+.followers_icon:hover{
+    font-size: 20px;
 }
 .soz:nth-child(4){
     width: 25%;
@@ -722,8 +735,7 @@ p.registration_text:before{
     color: white;
     border-radius: 3px;
     width: 100%;
-    /* height: 100%; */
-    /* line-height: 21px; */
+    transition: all 0.5s;
     padding: 3px 5px;
     /* margin: -5px 0; */
 }
@@ -851,6 +863,7 @@ line-height: 45px;
     font-size: 18px;
     color: white;
     border-radius: 3px;
+    transition: all 0.5s;
 }
 .followers_title{
     line-height: 12px;
@@ -891,6 +904,7 @@ line-height: 45px;
     padding: 0 10px;
     cursor: pointer;
     border-radius: 3px;
+    transition: all 0.5s;
 }
 
 
